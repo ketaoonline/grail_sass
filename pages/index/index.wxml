@@ -1,0 +1,116 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="section">
+
+    <view class="benchmark_text">基准货币</view>
+    <view class="benchmark benchmark_cny" wx:if="{{cny_bool==true}}">
+      CNY (人民币)
+      <input class="benchmark_input" value="{{cny_value}}" bindinput="cny_change"/>
+    </view>
+        <view class="benchmark benchmark_usd" wx:if="{{usd_bool==true}}">
+      USD (美元)
+      <input class="benchmark_input" value="{{usd_value}}"  bindinput="usd_change"/>
+    </view>
+        <view class="benchmark benchmark_gbp" wx:if="{{gbp_bool==true}}">
+      GBP (英镑)
+      <input class="benchmark_input" value="{{gbp_value}}"  bindinput="gbp_change"/>
+    </view>
+        <view class="benchmark benchmark_eur" wx:if="{{eur_bool==true}}">
+      EUR (欧元)
+      <input class="benchmark_input" value="{{eur_value}}"  bindinput="eur_change"/>
+    </view>
+        <view class="benchmark benchmark_jpy" wx:if="{{jpy_bool==true}}">
+      JPY (日元)
+      <input class="benchmark_input" value="{{jpy_value}}"  bindinput="jpy_change"/>
+    </view>
+        <view class="benchmark benchmark_hkd" wx:if="{{hkd_bool==true}}">
+      HKD (港元)
+      <input class="benchmark_input" value="{{hkd_value}}"  bindinput="hkd_change"/>
+    </view>
+        <view class="benchmark benchmark_aud" wx:if="{{aud_bool==true}}">
+      AUD (澳大利亚元)
+      <input class="benchmark_input" value="{{aud_value}}"  bindinput="aud_change"/>
+    </view>
+        <view class="benchmark benchmark_cad" wx:if="{{cad_bool==true}}">
+      CAD (加拿大元)
+      <input class="benchmark_input" value="{{cad_value}}"  bindinput="cad_change"/>
+    </view>
+        <view class="benchmark benchmark_sgd" wx:if="{{sgd_bool==true}}">
+      SGD (新加坡元)
+      <input class="benchmark_input" value="{{sgd_value}}"  bindinput="sgd_change"/>
+    </view>
+        <view class="benchmark benchmark_nzd" wx:if="{{nzd_bool==true}}">
+      NZD (新西兰元)
+      <input class="benchmark_input" value="{{nzd_value}}"  bindinput="nzd_change"/>
+    </view>
+
+  </view>
+
+  <view class="list">
+    <view class="benchmark_text list_title">换算货币</view>
+    <view class="detail_currency" wx:if="{{cny_bool2==true}}">
+      <view class="currency cny2" bindtap="cny_tap">
+        CNY (人民币)
+        <text>{{cny_text}}</text>
+      </view>
+    </view>
+    <view class="detail_currency" wx:if="{{usd_bool2==true}}">
+      <view class="currency usd" bindtap="usd_tap">
+        USD (美元)
+        <text>{{usd_text}}</text>
+      </view>
+    </view>
+     <view class="detail_currency" wx:if="{{gbp_bool2==true}}">
+      <view class="currency gbp" bindtap="gbp_tap">
+        GBP (英镑)
+        <text>{{gbp_text}}</text>
+      </view>
+    </view>
+     <view class="detail_currency" wx:if="{{eur_bool2==true}}">
+      <view class="currency eur" bindtap="eur_tap">
+        EUR (欧元)
+        <text>{{eur_text}}</text>
+      </view>
+    </view>
+     <view class="detail_currency" wx:if="{{jpy_bool2==true}}">
+      <view class="currency jpy" bindtap="jpy_tap">
+        JPY (日元)
+        <text>{{jpy_text}}</text>
+      </view>
+    </view>
+     <view class="detail_currency" wx:if="{{hkd_bool2==true}}">
+      <view class="currency hkd" bindtap="hkd_tap">
+        HKD (港元)
+        <text>{{hkd_text}}</text>
+      </view>
+    </view>
+     <view class="detail_currency" wx:if="{{aud_bool2==true}}">
+      <view class="currency aud" bindtap="aud_tap">
+        AUD (澳大利亚元)
+        <text>{{aud_text}}</text>
+      </view>
+    </view>
+     <view class="detail_currency" wx:if="{{cad_bool2==true}}">
+      <view class="currency cad" bindtap="cad_tap">
+        CAD (加拿大元)
+        <text>{{cad_text}}</text>
+      </view>
+    </view>
+     <view class="detail_currency" wx:if="{{sgd_bool2==true}}">
+      <view class="currency sgd" bindtap="sgd_tap">
+        SGD (新加坡币)
+        <text>{{sgd_text}}</text>
+      </view>
+    </view>
+     <view class="detail_currency" wx:if="{{nzd_bool2==true}}">
+      <view class="currency nzd" bindtap="nzd_tap">
+        NZD (新西兰元)
+        <text>{{nzd_text}}</text>
+      </view>
+    </view>
+  </view>
+
+  <button id="pay" bindtap="btn_pay">点击付款0.1HKD</button>
+<text class="bot_text">注：本汇率计算结果仅供参考，不作为交易依据。</text>
+</view>

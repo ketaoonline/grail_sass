@@ -1,0 +1,202 @@
+/**app.wxss**/
+
+header {
+  background: black;
+}
+
+.container {
+  height: 100%;
+  background: #efeff4;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
+page {
+  height: 100%;
+}
+
+/*基准货币*/
+
+.benchmark_text {
+  color: #888;
+  font-size: 14px;
+  height: 45px;
+  padding-left: 20px;
+  line-height: 45px;
+}
+
+.benchmark {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  padding-left: 65px;
+  border: 1px solid #e5e5e5;
+  background-size: 32px;
+}
+
+.benchmark_cny {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/cny.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_usd {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/usd.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_gbp {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/gbp.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_eur {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/eur.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_jpy {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/jpy.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_hkd {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/hkd.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_aud {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/aud.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_cad {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/cad.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_sgd {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/sgd.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+.benchmark_nzd {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/nzd.png") no-repeat 15px center white;
+  background-size: 32px;
+}
+
+/*输入框*/
+.benchmark_input {
+  width: 100px;
+  float: right;
+  height: 60px;
+  text-align: right;
+  padding-right: 15px;
+  background: white;
+  line-height: 60px;
+  font-size: 14px;
+}
+
+/*换算货币列表*/
+
+text {
+  float: right;
+  padding-right: 15px;
+  color: #888;
+  font-size: 11px;
+}
+
+.detail_currency {
+  background: #fff;
+}
+
+.currency {
+  margin-left: 15px;
+  height: 43px;
+  line-height: 43px;
+  font-size: 14px;
+  padding-left: 55px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cny2 {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/cny.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.usd {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/usd.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.gbp {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/gbp.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.eur {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/eur.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.jpy {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/jpy.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.hkd {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/hkd.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.aud {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/aud.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.cad {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/cad.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.sgd {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/sgd.png") no-repeat left center;
+  background-size: 32px;
+}
+
+.nzd {
+  background: url("https://ktimgs.oss-cn-beijing.aliyuncs.com/nzd.png") no-repeat left center;
+  background-size: 32px;
+  border: none;
+}
+
+/*底部编辑*/
+
+.edit {
+  background: green;
+  color: white;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/*底部提示*/
+.bot_text{
+  display: block;
+  width: 100%;
+  padding-right: 0;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#pay{
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  background:#2b90d9;
+  color: white;
+}
